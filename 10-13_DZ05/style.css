@@ -1,0 +1,17 @@
+div {
+    padding: 10px;
+    width: 500px;
+    min-width: 10px;
+    border-bottom: red 2px solid;
+}
+
+.hideElement {
+    /* border-bottom: red 2px dotted; */
+    width: 0px;
+    transition: width 3s;
+}
+
+.showElement {
+    width: 500px;
+    transition: width 3s;
+}

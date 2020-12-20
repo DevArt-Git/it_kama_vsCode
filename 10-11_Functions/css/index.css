@@ -1,0 +1,38 @@
+#container {
+    margin: 0 auto;
+    width: 500px;
+}
+
+#container > div > div {
+    padding-top: 20px;
+}
+
+.leftPartDiv {
+    float: left;
+    /* border: 1px solid black; */
+}
+
+.rightPartDiv {
+    float: left;
+
+    padding-left: 25px;
+    /* border: 1px solid black; */
+}
+
+.divImgAvatar > img {
+    width: 100px;
+    height: 70px;
+}
+
+label,
+.labelSex {
+    display: block;
+}
+
+div.sexChoiceDiv > label {
+    display: inline-block;
+}
+
+div.checkBoxButtonDiv > label {
+    display: inline-block;
+}

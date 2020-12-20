@@ -1,0 +1,12 @@
+.error {
+    border: red 2px solid;
+}
+
+.hideEl {
+    /* display: none; */
+    visibility: hidden;
+}
+
+.showEl {
+    visibility: visible;
+}

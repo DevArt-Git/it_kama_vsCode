@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p><input type="text" id="first-name" value="Dmitry" class="first-name-input"></p>
+    <p><input type="text" id="last-name" value="Kuznetcov" class="last-name-input"></p>
+    <p><input type="text" id="address" value="Russia" class="address-input"></p>
+
+    <select name="" id="select">
+        <option value="Moscow city">Moscow</option>
+        <option value="Minsk city" selected>Minsk</option>
+        <option value="Kiev city">Kiev</option>
+    </select>
+
+    <div style="margin-top: 10px;">
+        <textarea name="" id="txtArea" cols="40" rows="7">
+    Плаванье
+    Садоводство
+    Музыка
+    Усовершенствование автомобилей
+    Спорт
+        </textarea>
+    </div>
+
+    <div id="div-img">
+        <img src="http://newsforward.ru/wp-content/uploads/2020/05/8uh4-_YJUCc.jpg" alt="Avatar" width="200px" id="img">
+    </div>
+
+
+    <script>
+        let firstNameEl = document.getElementById('first-name');
+        let lastNameEl = document.getElementById('last-name');
+        let addressEl = document.getElementById('address');
+        let textAreaEl = document.getElementById('txtArea');
+
+        console.log(firstNameEl.value);
+        console.log(lastNameEl.value);
+        console.log(addressEl.value);
+
+        console.log(document.getElementById('select').value);
+        console.log(textAreaEl.value);
+        console.log(textAreaEl.innerHTML);
+
+        console.log(document.getElementById('div-img').innerHTML);
+        console.log(document.getElementById('img').src);
+        console.log(document.getElementById('img').alt);
+        console.log(document.getElementById('select').innerHTML);
+
+
+
+    </script>
+</body>
+
+</html>

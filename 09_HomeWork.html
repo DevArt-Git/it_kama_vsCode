@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="container">
+        <div id="emailInputDiv">
+            <p>E-Mail</p>
+            <input type="text" id="emailInput">
+        </div>
+        <div id="passwordInputDiv">
+            <p>Password</p>
+            <input type="password" id="passwordInput">
+        </div>
+        <div id="checkBoxButtonDiv">
+            <label><input type="checkbox" name="" id="checkBoxSelect">Remember Me</label>
+            <!-- <label for="checkBoxSelect">Remember Me</label> -->
+            <button id="button">Log In</button>
+        </div>
+
+    </div>
+
+    <script>
+
+        let emailId = 'emailInput';
+        let emailEl = document.getElementById(emailId);
+        let emailInputDiv = document.getElementById('emailInputDiv');
+        let passwordId = 'passwordInput';
+        let passwordEl = document.getElementById(passwordId);
+        let inputCheckBoxStatusId = "checkBoxSelect";
+        let inputCheckBoxStatusEl = document.getElementById(inputCheckBoxStatusId);
+        let someTextEl = document.createElement('p');
+        let textInSpanWrongEmail = document.createTextNode("Введите корректный Email")
+
+
+
+        let loginButton = document.getElementById('button');
+        loginButton.onclick = function () {
+            // window.alert('Login: ' + emailEl.value + ' Password: ' + passwordEl.value);
+            loginButton.className = "pressed";
+            emailEl.className = "pressed";
+            someTextEl.appendChild(textInSpanWrongEmail);
+            emailInputDiv.appendChild(someTextEl);
+        };
+
+
+
+    </script>
+
+    <style>
+        #container {
+            width: 300px;
+            margin: 0 auto;
+            background-color: rgba(0, 255, 255, 0.185);
+            border-style: solid;
+            border-color: grey;
+        }
+
+        #container>div {
+            padding: 5px 20px;
+        }
+
+        /* #checkBoxButtonDiv {
+            margin-top: 10px;
+        } */
+
+        #checkBoxButtonDiv>input label {
+            float: left;
+        }
+
+        #button {
+            float: right;
+        }
+
+        .pressed {
+            border: rgb(0, 0, 0) 2px solid;
+            background-color: rgba(228, 53, 53, 0.507);
+        }
+    </style>
+</body>
+
+</html>

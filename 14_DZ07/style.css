@@ -1,0 +1,22 @@
+.alert {
+    max-width: 400px;
+    padding: 5px;
+    margin: 10px 0;
+    border: 1px solid #000000;
+    border-radius: 4px;
+    color: #3c763d;
+    background-color: #dff0d8;
+}
+.blueButtonInDiv {
+    padding: 5px;
+    margin-left: 5px;
+    border: 1px solid #000000;
+    border-radius: 4px;
+    color: #eaebec;
+    background-color: #008cff;
+}
+
+.errorClass {
+    border: 1px solid #ff0000;
+    background-color: #008cff;
+}

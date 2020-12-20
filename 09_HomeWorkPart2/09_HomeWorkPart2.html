@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="container">
+        <div class="leftPartDiv">
+            <div class="divImgAvatar">
+                <img src="https://english4life.ru/wp-content/uploads/2017/06/knock.jpg" alt="Avatar"
+                    class="someImageToChangeOnClick">
+            </div>
+            <div class="sexChoiceDiv">
+                <label class="labelSex" for="">Sex</label>
+                <input name="sexChoice" type="radio" id="sexChoiceM" value="M">
+                <label for="sexChoiceM">M</label>
+                <input name="sexChoice" type="radio" id="sexChoiceF" value="F">
+                <label for="sexChoiceF">F</label>
+            </div>
+            <div class="checkBoxButtonDiv">
+                <label>Single</label>
+                <input type="checkbox" name="" id="checkBoxSelect">
+            </div>
+        </div>
+        <div class="rightPartDiv">
+            <div id="firstNameDiv">
+                <label>First Name</label>
+                <input type="text" class="firstNameInput namesInput" id="fNameInput" value="Dmitriy">
+            </div>
+            <div id="secondNameDiv">
+                <label>Second Name</label>
+                <input type="text" class="secondNameInput namesInput" id="sNameInput" value="Kuzyberdin">
+            </div>
+
+
+            <div class="selectCities">
+                <label for="">City:</label>
+                <select name="" id="cities">
+                    <option value="Moscow city">Moscow</option>
+                    <option value="Minsk city">Minsk</option>
+                    <option value="Kiev city">Kiev</option>
+                </select>
+            </div>
+            <div>
+                <label for="">About me</label>
+                <textarea name="aboutMe" id="aboutMe" cols="25" rows="5"></textarea>
+            </div>
+        </div>
+
+        <input type="button" value="Нажми меня для смены картинки ;)" id="buttonPressMe">
+
+    </div>
+
+    <script src="js/index.js"></script>
+    <link rel="stylesheet" href="css/index.css">
+
+</body>
+
+</html>
