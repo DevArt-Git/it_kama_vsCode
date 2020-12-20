@@ -59,6 +59,6 @@ span.addEventListener('click', changeSpanOnInput);
 buttonInDiv.addEventListener('click', saveCurrentTextInSpan);
 
 changeValuesButton.addEventListener('click', changeValues);
-inputElements.forEach()addEventListener('input', addErrorClassToInputOneToTen);
+inputElements.forEach()addEventListener('input', addErrorClassToInputOneToTen);;
 
 
